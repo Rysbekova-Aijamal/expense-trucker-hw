@@ -1,3 +1,4 @@
+import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css'
 
 const ExpenseItem = (props) => {
@@ -7,8 +8,8 @@ const ExpenseItem = (props) => {
    return (
         <div className='expense-item'>
             {/* <expenseDate expenseDate={expenseDate}/> */}
-           {/* <ExpenseDate expenseDate ={expenseDate}/> */}
-           <div>{expenseDate.toString()}</div>
+           <ExpenseDate expenseDate ={expenseDate}/>
+           {/* <div>{expenseDate.toString()}</div> */}
            <h2 className='expense-item__description'>{expenseTitle}</h2>
             
             <div className='expense-item__price'>${expensePrice}</div>
